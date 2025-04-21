@@ -2,18 +2,24 @@
 
 Surfing the web is for boomers. Surf some boards and find cool shit to do.
 
+---
+
 ## Why? 🤔
 
 Need something to do today? Create boards with your favorite activities! Or better yet, find someone else's board to find something new.
 Have trouble choosing? SurfBored will pick activities at random so you dont have to!
 Connect with friends and make collaborative boards!
 
-## How it works: 🔍
+---
 
-Create and share activities by creating a post!
-Create and share collections of your favorite activites via boards.
-Find an activity you like? Add it to the board of your choosing.
-Find a board you like? Like it and add it to you library of boards.
+## How it works: 🔍
+Using SurfBored is simple, after you learn you'll wonder how you lived without it!
+  - Create a board! Boards are private by default, but you can enable public discoverability or invite friends.
+  - Upload activities that fit the vibe of the board! Anything from date ideas to beaches to go to or even movies you want to watch!
+  - Pick an activity when the time comes either by surfing the boards or using our shuffle feature to have an activity randomly selected!
+  - Add friends to collaborate and plan your next exciting adventure!
+
+---
 
 ## Tech Stack:
 The current tech stack for this project:
