@@ -1,0 +1,144 @@
+{
+  "dates": [
+    {
+      "title": "Stargazing Picnic",
+      "description": "Lay under the stars with cozy blankets, snacks, and good conversation.",
+      "emoji": "🌌",
+      "hashtags": ["#romantic", "#outdoors", "#nightdate"],
+      "likes": 128
+    },
+    {
+      "title": "DIY Sushi Night",
+      "description": "Roll your own sushi together and see who can make the tastiest combo.",
+      "emoji": "🍣",
+      "hashtags": ["#cooking", "#funathome", "#sushilovers"],
+      "likes": 95
+    },
+    {
+      "title": "Sunset Beach Walk",
+      "description": "Take a slow stroll on the beach and watch the sun dip below the horizon.",
+      "emoji": "🌅",
+      "hashtags": ["#beachdate", "#sunsetvibes", "#relaxing"],
+      "likes": 176
+    },
+    {
+      "title": "Board Game Night",
+      "description": "Challenge each other with your favorite board games and snacks.",
+      "emoji": "🎲",
+      "hashtags": ["#gamenight", "#cozyvibes", "#friendlycompetition"],
+      "likes": 84
+    },
+    {
+      "title": "Farmers Market + Brunch",
+      "description": "Shop local produce and make a fresh brunch together at home.",
+      "emoji": "🧺",
+      "hashtags": ["#sundayfunday", "#brunchdate", "#marketvibes"],
+      "likes": 143
+    },
+    {
+      "title": "Art Museum Adventure",
+      "description": "Explore new exhibits and get inspired by the beauty of art.",
+      "emoji": "🖼️",
+      "hashtags": ["#artdate", "#culture", "#museummoments"],
+      "likes": 101
+    },
+    {
+      "title": "Coffee Shop Crawl",
+      "description": "Hop around local cafés and rate the best lattes together.",
+      "emoji": "☕",
+      "hashtags": ["#coffeelovers", "#citydate", "#caffeinefix"],
+      "likes": 73
+    },
+    {
+      "title": "Mini Golf Challenge",
+      "description": "A little friendly competition with laughs and putters.",
+      "emoji": "⛳",
+      "hashtags": ["#minigolf", "#playful", "#fun"],
+      "likes": 112
+    },
+    {
+      "title": "Couples Pottery Class",
+      "description": "Get your hands dirty and make something memorable.",
+      "emoji": "🪔",
+      "hashtags": ["#creative", "#claydate", "#ghostvibes"],
+      "likes": 89
+    },
+    {
+      "title": "Hiking + Picnic",
+      "description": "Take a scenic trail and enjoy a well-earned picnic at the top.",
+      "emoji": "🥾",
+      "hashtags": ["#adventure", "#naturelovers", "#picnic"],
+      "likes": 154
+    },
+    {
+      "title": "Drive-In Movie",
+      "description": "Watch a classic film under the stars from the comfort of your car.",
+      "emoji": "🎬",
+      "hashtags": ["#movievibes", "#retro", "#cozydate"],
+      "likes": 131
+    },
+    {
+      "title": "Thrift Store Challenge",
+      "description": "Pick outfits for each other and go out wearing them.",
+      "emoji": "🛍️",
+      "hashtags": ["#sillyfun", "#thrifting", "#budgetfriendly"],
+      "likes": 67
+    },
+    {
+      "title": "Karaoke Night",
+      "description": "Sing your heart out at a karaoke bar or at home.",
+      "emoji": "🎤",
+      "hashtags": ["#karaokenight", "#singtogether", "#fun"],
+      "likes": 118
+    },
+    {
+      "title": "Bookstore Date",
+      "description": "Pick out books for each other and chat over coffee.",
+      "emoji": "📚",
+      "hashtags": ["#bookdate", "#quietmoments", "#bookworms"],
+      "likes": 90
+    },
+    {
+      "title": "Wine & Paint",
+      "description": "Sip wine and paint something fun together.",
+      "emoji": "🎨",
+      "hashtags": ["#paintnight", "#artsydates", "#winevibes"],
+      "likes": 102
+    },
+    {
+      "title": "Ice Cream Tasting",
+      "description": "Try every flavor at your local scoop shop and find your fave.",
+      "emoji": "🍦",
+      "hashtags": ["#sweettooth", "#icecreamdate", "#delish"],
+      "likes": 86
+    },
+    {
+      "title": "Hot Air Balloon Ride",
+      "description": "Float above the world in a dreamy balloon ride.",
+      "emoji": "🎈",
+      "hashtags": ["#bucketlist", "#sunriselove", "#adventurous"],
+      "likes": 162
+    },
+    {
+      "title": "Cooking Class",
+      "description": "Learn a new cuisine together with a professional chef.",
+      "emoji": "👩‍🍳",
+      "hashtags": ["#learningtogether", "#foodie", "#dateideas"],
+      "likes": 123
+    },
+    {
+      "title": "Zoo or Aquarium Visit",
+      "description": "Say hi to the animals and learn something new together.",
+      "emoji": "🐧",
+      "hashtags": ["#animals", "#cuteoverload", "#funforall"],
+      "likes": 91
+    },
+    {
+      "title": "Polaroid Scavenger Hunt",
+      "description": "Take instant photos of clues or objects around your city.",
+      "emoji": "📸",
+      "hashtags": ["#scavengerhunt", "#photodate", "#memories"],
+      "likes": 78
+    }
+  ]  
+}
