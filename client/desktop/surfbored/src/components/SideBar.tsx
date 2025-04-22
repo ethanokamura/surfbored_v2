@@ -4,6 +4,7 @@ import { BsPeople } from "react-icons/bs";
 import { FaEllipsisH } from "react-icons/fa";
 import { GiPalmTree } from "react-icons/gi";
 import { PiPlus } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 export default function SideBar() {
 
@@ -43,7 +44,9 @@ export default function SideBar() {
         <div className="w-full h-fit">
           <div className="flex items-center justify-between">
             <h1 className="text-lg my-1">My Boards</h1>
-            <PiPlus/>
+            <Link to={"/boards/create"}>
+              <PiPlus/>
+            </Link>
           </div>
           <ul className="space-y-1">
             <li className="text-text text-base">😍 Date Night</li>

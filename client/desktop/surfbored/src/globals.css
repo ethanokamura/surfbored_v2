@@ -86,7 +86,7 @@
 
   input,
   textarea {
-    @apply w-full outline-none bg-background border-none rounded-radius px-3 py-2;
+    @apply w-full outline-none bg-transparent ring-2 ring-surface rounded-radius px-3 py-2;
   }
 
   textarea {
@@ -94,7 +94,8 @@
   }
 
   button {
-    @apply bg-accent text-xl px-8 py-1 rounded-radius hover:rounded-sm my-5 text-background;
+    @apply ring-accent ring-2 text-xl px-8 py-1 rounded-radius my-5 text-text
+      hover:rounded-sm hover:bg-accent hover:text-background;
   }
 
   button,
@@ -113,7 +114,6 @@
     padding: 5px;
     border-radius: var(--radius-radius);
     overflow: visible;
-    background: var(--color-accent);
     background: var(--background);
     position: relative;
     z-index: 1;
@@ -127,9 +127,8 @@
     z-index: -1;
     height: 100%;
     width: 100%;
-    transform: scale(1);
+    transform: scale(.95);
     filter: blur(25px);
-    background: var(--color-accent);
     background: var(--background);
     transition: opacity .5s;
   }
