@@ -1,25 +1,49 @@
 export type Post = {
-  id: string;
-  creatorId: string;
+  post_id: string;
+  author_id: string;
+  board_id: string;
   title: string;
-  description: string;
-  likedBy: string[];
-  createdAt: Date;
-  updatedAt: Date;
-  tags: Tag[];
-  memories: Memory[]
-}
+  description?: string;
+  link?: string;
+  photo_url?: string;
+  created_at: string;
+  updated_at: string;
+};
 
 export type Tag = {
-  name: string;  // unique
-  usage: number;  // quick access
-}
+  tag_id: number;
+  name: string;
+};
 
-export type Memory = {
-  id: string;
-  postId: string;
+export type PostTag = {
+  post_id: string;
+  tag_id: number;
+};
+
+export type Reaction = {
+  reaction_id: number;
+  emoji: string;
+  name: string;
+};
+
+export type PostReaction = {
+  user_id: string;
+  post_id: string;
+  reaction_id: number;
+  created_at: string;
+};
+
+export type FormattedPost = {
+  post_id: string;
+  author_id: string;
+  board_id: string;
   title: string;
-  description: string;
-  photoUrl: string;
-  createdAt: Date;
+  description?: string;
+  link?: string;
+  photo_url?: string;
+  created_at: string;
+  updated_at: string;
+  tags: Tag[];
+  reactions: Reaction[];
+  height: number;
 }

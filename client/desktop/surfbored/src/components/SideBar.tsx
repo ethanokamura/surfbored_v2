@@ -25,19 +25,25 @@ export default function SideBar() {
         <h1 className="text-center">Surf<span className="text-accent">Bored</span></h1>
         <hr/>
         <div className="w-full" >
-          <ul className="space-y-2">
-            <li className="hover:ring-2 ring-accent py-2 px-4 bg-background-2 text-text2 rounded-radius flex justify-between items-center">
-              <span>Explore</span>
-              <BiCompass/>
-            </li>
-            <li className="hover:ring-2 ring-accent py-2 px-4 bg-background-2 text-text2 rounded-radius flex justify-between items-center">
-              <span>Favorites</span>
-              <BiHeart/>
-            </li>
-            <li className="hover:ring-2 ring-accent py-2 px-4 bg-background-2 text-text2 rounded-radius flex justify-between items-center">
-              <span>Friends</span>
-              <BsPeople/>
-            </li>
+          <ul className="flex flex-col gap-2">
+            <Link to={"/explore"}>
+              <li className="hover:ring-2 ring-accent py-2 px-4 bg-background-2 text-text2 rounded-radius flex justify-between items-center">
+                <span>Explore</span>
+                <BiCompass/>
+              </li>
+            </Link>
+            <Link to={`/favorites`}>
+              <li className="hover:ring-2 ring-accent py-2 px-4 bg-background-2 text-text2 rounded-radius flex justify-between items-center">
+                <span>Favorites</span>
+                <BiHeart/>
+              </li>
+            </Link>
+            <Link to={`/friends`}>
+              <li className="hover:ring-2 ring-accent py-2 px-4 bg-background-2 text-text2 rounded-radius flex justify-between items-center">
+                <span>Friends</span>
+                <BsPeople/>
+              </li>
+            </Link>
           </ul>
         </div>
         <hr/>
@@ -65,18 +71,20 @@ export default function SideBar() {
           </ul>
         </div>
       </div>
-      <div className="card flex w-full gap-2 items-center">
-        <div className="p-4 bg-background rounded w-fit">
-          <GiPalmTree size={16} className="text-text2"/>
+      <Link to={`/dashboard`}>
+        <div className="card hover:ring-2 ring-accent flex w-full gap-2 items-center">
+          <div className="p-4 bg-background rounded w-fit">
+            <GiPalmTree size={16} className="text-text2"/>
+          </div>
+          <div className="flex flex-col overflow-x-hidden">
+            <span className="text-base text-accent">@ethanokamura</span>
+            <span className="text-sm text-text2">Do not disturb</span>
+          </div>
+          <div>
+            <FaEllipsisH/>
+          </div>
         </div>
-        <div className="flex flex-col overflow-x-hidden">
-          <span className="text-base text-accent">@ethanokamura</span>
-          <span className="text-sm text-text2">Do not disturb</span>
-        </div>
-        <div>
-          <FaEllipsisH/>
-        </div>
-      </div>
+      </Link>
     </div>
   );
 }

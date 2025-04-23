@@ -1,9 +1,12 @@
 import { FaMagnifyingGlass } from "react-icons/fa6";
-import { dates } from "../../data/dates.json";
-import { HiHeart } from "react-icons/hi";
+import { data } from "@/data/getDates";
+import { getReactions, getTags } from '@/utils/getPostData';
+import PostCard from '@/components/PostCard';
+import { MasonryLayout } from '@/components/masonry/PostMasonry';
+
 
 export default function Board() {
-  const randomDate = dates[Math.floor(Math.random() * dates.length)];
+  const randomPost = data.posts[Math.floor(Math.random() * data.posts.length)];
 
   return(
   
@@ -14,47 +17,32 @@ export default function Board() {
         <span className="text-accent">@ethanokamura</span>
       </div>
       <div className="card-bg">
-        <Activity {...randomDate} />
+        <PostCard
+          key={randomPost.post_id}
+          post={randomPost}
+          tags={getTags(randomPost.post_id)}
+          reactions={getReactions(randomPost.post_id)}
+        />
       </div>
-      <div className="space-y-5 relative">
+      <div className="space-y-5 relative w-full">
         <h2 className="text-center">More Date Night Activities</h2>
         <div className="flex fixed right-10 z-10 top-5 items-center gap-2 text-text2">
           <FaMagnifyingGlass/>
           <span>Search</span>
         </div>
-        <div className="h-full flex flex-wrap gap-4 justify-center pb-40">
-          {dates.map((date)=> (
-            <Activity {...date} />
+        <MasonryLayout posts={data.posts} />
+        {/* <div className="h-full flex flex-wrap gap-4 justify-center pb-40">
+          {data.posts.map((post)=> (
+              <PostCard 
+              key={post.post_id}
+              post={post}
+              tags={getTags(post.post_id)}
+              reactions={getReactions(post.post_id)}
+            />
           ))}
-        </div>
+        </div> */}
       </div>
     </div>
 
-  )
-}
-
-type ActivityProps = {
-  title: string;
-  description: string;
-  emoji: string;
-  hashtags: string[];
-  likes: number;
-}
-
-function Activity({title, description, emoji, hashtags, likes} : ActivityProps) {
-  return (
-    <button className="card hover:ring-2 hover:scale-105 ring-accent m-0 flex flex-col text-start gap-4 w-96">
-      <h1 className="text-text text-xl my-1">{title} {emoji}</h1>
-      <p className="text-base">{description}</p>
-      <div className="flex flex-wrap gap-2">
-        {hashtags.map(hashtag => (
-          <span className="text-sm text-text2 bg-surface px-2 py-1">{hashtag}</span>
-        ))}
-      </div>
-      <div className="flex items-center justify-end w-full text-accent gap-2">
-        <span className="text-xs">{likes}</span>        
-        <HiHeart/>
-      </div>
-    </button>
   )
 }
